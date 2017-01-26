@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse"
+          name="ImportReportMatches"
+          onError="Error500"
+          trace="enable">
+   <log>
+      <property name="ImportReportMatches" value="Begin"/>
+      <property xmlns:ns="http://org.apache.synapse/xsd"
+                name="JSONPayload"
+                expression="json-eval($.)"/>
+   </log>
+   <iterate xmlns:ns="http://org.apache.synapse/xsd"
+            continueParent="true"
+            expression="//report-matches"
+            sequential="true">
+      <target>
+         <sequence>
+            <log>
+               <property expression="//report-matches/idMatch" name="idMatch"/>
+               <property expression="//report-matches/equipoL" name="equipoL"/>
+			   <property expression="//report-matches/equipoV" name="equipoV"/>
+            </log>
+             <property expression="//report-matches/idMatch" name="idMatch" xmlns:ns="http://org.apache.synapse/xsd"/>
+			<property expression="//report-matches/equipoL" name="equipoL" xmlns:ns="http://org.apache.synapse/xsd"/>
+			<property expression="//report-matches/equipoV" name="equipoV" xmlns:ns="http://org.apache.synapse/xsd"/>
+			<property expression="//report-matches/golesL" name="golesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+			<property expression="//report-matches/golesV" name="golesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+			
+             <dblookup>
+				<connection>
+					<pool>
+						<dsName>dsbibs</dsName>
+					</pool>
+				</connection>
+				<statement>
+					<sql><![CDATA[SELECT public.import_ws_reportmatches( ?, ?, ?, ?, ?)]]></sql>
+					<parameter expression="get-property('idMatch')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
+					<parameter expression="get-property('equipoL')" type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+					<parameter expression="get-property('equipoV')"	type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+					<parameter expression="get-property('golesL')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
+					<parameter expression="get-property('golesV')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
+				</statement>
+			</dblookup>
+         </sequence>
+      </target>
+   </iterate>
+   <log>
+      <property name="ImportReportMatches" value="End"/>
+   </log>
+</sequence>

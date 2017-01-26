@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api xmlns="http://ws.apache.org/ns/synapse"
+     name="InternalAPI"
+     context="/internal/v1"
+     port="8280">
+   <resource methods="POST PUT"
+             uri-template="/InsertarCotizacion"
+             inSequence="InsertarCotizacion"/>
+   <resource methods="POST PUT"
+             uri-template="/InsertarVolumen"
+             inSequence="InsertarVolumen"/>
+   <resource methods="GET"
+             url-mapping="/ObtenerSecuencia"
+             inSequence="ObtenerSecuencia"
+             faultSequence="Error500"/>
+   <resource methods="POST PUT"
+             uri-template="/ActualizarComposicion"
+             inSequence="ActualizarComposicionIn"/>
+   <resource methods="POST PUT"
+             uri-template="/InsertarCierreAnterior"
+             inSequence="InsertarCierreAnterior"/>
+   <resource methods="POST PUT"
+             uri-template="/InsertarEstadoIndices"
+             inSequence="InsertarEstadoIndices"/>
+   <resource methods="POST PUT"
+             uri-template="/PruInsertarVolumen"
+             inSequence="PruInsertarVolumen"/>
+   <resource methods="POST PUT"
+             uri-template="/PruInsertarCotizacion"
+             inSequence="PruInsertarCotizacion"/>
+   <resource methods="POST PUT"
+             uri-template="/PruInsertarCierreAnterior"
+             inSequence="PruInsertarCierreAnterior"/>
+   <resource methods="POST PUT"
+             uri-template="/PruInsertarEstadoIndices"
+             inSequence="PruInsertarEstadoIndices"/>
+   <resource methods="POST PUT" uri-template="/test" inSequence="SDIBPREANTEN"/>
+</api>
