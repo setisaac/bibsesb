@@ -18,29 +18,160 @@
             <log>
                <property expression="//report-matches/idMatch" name="idMatch"/>
                <property expression="//report-matches/equipoL" name="equipoL"/>
-			   <property expression="//report-matches/equipoV" name="equipoV"/>
+               <property expression="//report-matches/equipoV" name="equipoV"/>
             </log>
-             <property expression="//report-matches/idMatch" name="idMatch" xmlns:ns="http://org.apache.synapse/xsd"/>
-			<property expression="//report-matches/equipoL" name="equipoL" xmlns:ns="http://org.apache.synapse/xsd"/>
-			<property expression="//report-matches/equipoV" name="equipoV" xmlns:ns="http://org.apache.synapse/xsd"/>
-			<property expression="//report-matches/golesL" name="golesL" xmlns:ns="http://org.apache.synapse/xsd"/>
-			<property expression="//report-matches/golesV" name="golesV" xmlns:ns="http://org.apache.synapse/xsd"/>
-			
+            <property expression="//report-matches/idMatch" name="idMatch" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/country" name="country" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/Liga" name="Liga" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/Temporada" name="Temporada" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/golesL" name="golesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/equipoL" name="equipoL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/golesV" name="golesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/equipoV" name="equipoV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/fecha" name="fecha" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/hora" name="hora" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TotalShotsL" name="TotalShotsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TotalShotsV" name="TotalShotsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/WoodworkL" name="WoodworkL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/WoodworkV" name="WoodworkV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsontargetL" name="ShotsontargetL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsontargetV" name="ShotsontargetV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsofftargetL" name="ShotsofftargetL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsofftargetV" name="ShotsofftargetV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsblockedL" name="ShotsblockedL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ShotsblockedV" name="ShotsblockedV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/PossessionL" name="PossessionL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/PossessionV" name="PossessionV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TouchesL" name="TouchesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TouchesV" name="TouchesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/PassSuccessL" name="PassSuccessL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/PassSuccessV" name="PassSuccessV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TotalpassesL" name="TotalpassesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TotalpassesV" name="TotalpassesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/AccuratepassesL" name="AccuratepassesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/AccuratepassesV" name="AccuratepassesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/KeypassesL" name="KeypassesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/KeypassesV" name="KeypassesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribblesWonL" name="DribblesWonL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribblesWonV" name="DribblesWonV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribblesattemptedL" name="DribblesattemptedL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribblesattemptedV" name="DribblesattemptedV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribbledpastL" name="DribbledpastL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribbledpastV" name="DribbledpastV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribbleSuccessL" name="DribbleSuccessL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DribbleSuccessV" name="DribbleSuccessV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/AerialsWonL" name="AerialsWonL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/AerialsWonV" name="AerialsWonV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/OffensiveAerialsL" name="OffensiveAerialsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/OffensiveAerialsV" name="OffensiveAerialsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DefensiveAerialsL" name="DefensiveAerialsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DefensiveAerialsV" name="DefensiveAerialsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/SuccessfulTacklesL" name="SuccessfulTacklesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/SuccessfulTacklesV" name="SuccessfulTacklesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TacklesAttemptedL" name="TacklesAttemptedL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TacklesAttemptedV" name="TacklesAttemptedV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/WasDribbledL" name="WasDribbledL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/WasDribbledV" name="WasDribbledV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TackleSuccessL" name="TackleSuccessL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/TackleSuccessV" name="TackleSuccessV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ClearancesL" name="ClearancesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ClearancesV" name="ClearancesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/InterceptionsL" name="InterceptionsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/InterceptionsV" name="InterceptionsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/CornersL" name="CornersL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/CornersV" name="CornersV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/CornerAccuracyL" name="CornerAccuracyL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/CornerAccuracyV" name="CornerAccuracyV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DispossessedL" name="DispossessedL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/DispossessedV" name="DispossessedV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ErrorsL" name="ErrorsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/ErrorsV" name="ErrorsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/FoulsL" name="FoulsL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/FoulsV" name="FoulsV" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/OffsidesL" name="OffsidesL" xmlns:ns="http://org.apache.synapse/xsd"/>
+            <property expression="//report-matches/OffsidesV" name="OffsidesV" xmlns:ns="http://org.apache.synapse/xsd"/>
+
              <dblookup>
-				<connection>
-					<pool>
-						<dsName>dsbibs</dsName>
-					</pool>
-				</connection>
-				<statement>
-					<sql><![CDATA[SELECT public.import_ws_reportmatches( ?, ?, ?, ?, ?)]]></sql>
-					<parameter expression="get-property('idMatch')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
-					<parameter expression="get-property('equipoL')" type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
-					<parameter expression="get-property('equipoV')"	type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
-					<parameter expression="get-property('golesL')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
-					<parameter expression="get-property('golesV')"	type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
-				</statement>
-			</dblookup>
+                <connection>
+                    <pool>
+                        <dsName>dsbibs</dsName>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[SELECT public.import_ws_reportmatches(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]]></sql>
+                    <parameter expression="get-property('idMatch')" type="INTEGER" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('country')" type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('Liga')"    type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('Temporada')"   type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('golesL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('equipoL')" type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('golesV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('equipoV')" type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('fecha')"   type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('hora')"    type="VARCHAR" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TotalShotsL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TotalShotsV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('WoodworkL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('WoodworkV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsontargetL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsontargetV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsofftargetL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsofftargetV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsblockedL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ShotsblockedV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('PossessionL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('PossessionV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TouchesL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TouchesV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('PassSuccessL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('PassSuccessV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TotalpassesL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TotalpassesV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('AccuratepassesL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('AccuratepassesV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('KeypassesL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('KeypassesV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribblesWonL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribblesWonV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribblesattemptedL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribblesattemptedV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribbledpastL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribbledpastV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribbleSuccessL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DribbleSuccessV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('AerialsWonL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('AerialsWonV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('OffensiveAerialsL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('OffensiveAerialsV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DefensiveAerialsL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DefensiveAerialsV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('SuccessfulTacklesL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('SuccessfulTacklesV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TacklesAttemptedL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TacklesAttemptedV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('WasDribbledL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('WasDribbledV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TackleSuccessL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('TackleSuccessV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ClearancesL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ClearancesV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('InterceptionsL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('InterceptionsV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('CornersL')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('CornersV')"    type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('CornerAccuracyL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('CornerAccuracyV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DispossessedL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('DispossessedV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ErrorsL')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('ErrorsV')" type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('FoulsL')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('FoulsV')"  type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('OffsidesL')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+                    <parameter expression="get-property('OffsidesV')"   type="NUMERIC" xmlns:ns="http://org.apache.synapse/xsd"/>
+
+                </statement>
+            </dblookup>
          </sequence>
       </target>
    </iterate>
